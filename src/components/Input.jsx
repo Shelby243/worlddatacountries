@@ -1,10 +1,15 @@
 import React from 'react'
 
+import {FaSearch} from "react-icons/fa"
+
 export default function Input({value,onChange}) {
-    const placeholder='Search Countries by name, capital, languages and currency'
+    const placeholder='Search for Country ... '
   return (
-    <div  >
+    <div className='position1'>
+        
         <input
+
+            
             type='text'
             name='search'
             placeholder={placeholder}

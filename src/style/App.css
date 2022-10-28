@@ -14,13 +14,18 @@ html,
         
     }
     header{
-        padding: 70px;
+        padding: 4.375rem;
         /*background: #6247cc;
         /*border: 1px solid white;*/
         background-image: linear-gradient(rgba(0,0,0,0.2),rgba(1,0,0,0.2)),url('../images/world3.jpg');
         background-repeat: no-repeat;
+        height: 17rem;
         
 
+    }
+    nav{
+      padding: 3rem;
+      height: 5rem;
     }
     .header-wrapper{
       width: 101%;
@@ -154,7 +159,12 @@ font-weight: 400;
 
 .country-header{
   text-align: center;
-  padding: 1.5rem;
+  padding: 1.0rem;
+}
+.nav-bar{
+  
+  padding: 0.5rem;
+  
 }
 .country-header h1 {
   font-size: 4rem;
@@ -195,18 +205,29 @@ font-weight: 400;
   border-radius: 3rem;
   background: rgb(250, 246, 246);
 }
-input{
-  margin: 3rem auto;
+.position1{
+  left: 1.0rem; 
+  border: 1px solid gray;
+  
+}
+.position2{
+  right:1.5rem;
+  border: 1px solid gray;
+
+}
+.position1 input{
+  margin: -2rem auto;
   border: 0.2rem solid white;
-  width: 50%;
-  height: 5rem;
+  width: 30%;
+  height: 3.5rem;
   text-indent: 2rem;
   outline: none;
   font-size: 1.2rem;
   padding: 0.625rem 0.625rem;
-  border-radius: 3rem;
+  border-radius: 1rem;
   cursor: text;
   background-color: rgb(246, 251, 253);
+  
 }
 input:hover,
 input:focus {
@@ -219,6 +240,7 @@ input::placeholder {
   font-weight: 100;
   opacity: 0.65;
   color: rgb(138, 115, 115);
+  color: black;
 }
 
 div{
@@ -234,18 +256,23 @@ div{
   margin:1rem 0 3rem;
   padding: 1rem;
 }
+
+
+
 .country{
-  max-width: 25rem;
-  min-width: 25rem;
+  max-width: 18rem;
+  min-width: 18rem;
+  max-height: 25rem;
+  min-height: 25rem;
   text-align: center;
   margin: 0.5rem;
-  padding: 2rem;
+  padding: 0.5rem;
   border-radius: 0.2rem;
   background: #fff;
 }
  .country_flag{
-  height: 12rem;
-  width: 20rem;
+  height: 10rem;
+  width: 18rem;
   text-align: center;
   margin: auto;
  }
@@ -265,14 +292,14 @@ div{
   box-shadow: 0 0 0.6rem 0.2rem rgb(241, 225, 225);
 }
 .country h2{
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: #ffa500;
   letter-spacing: 0.075rem;
   font-weight: bolder;
   margin-bottom: 1rem;
 }
 .country p{
-  font-size: 1.36rem;
+  font-size: 1.1rem;
   font-weight: 500;
   padding: 0.2rem;
   color: #747474;
@@ -282,7 +309,11 @@ div{
 .country span{
   font-weight: 600;
 }
-
+button{
+  font-size: 1rem;
+  margin: -2 10rem auto;
+  
+}
 @media screen and  (max-width: 768px) {
   .country-header h1 {
     font-size: 1.5rem;

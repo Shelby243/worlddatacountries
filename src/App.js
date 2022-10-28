@@ -4,7 +4,7 @@ import { countriesData } from './data/countries'
 import Header from './header/Header'
 import Main from './main/Main'
 import './style/App.css'
-
+import Nav from './nav/Nav'
 export default function App() {
     const [filter,setFilter]=useState('')
     
@@ -30,8 +30,11 @@ export default function App() {
         <Header
         number={countriesData.length} 
         info={info}
-        filter={filter}
-        handleChange={searchText.bind(this)}
+        
+        />
+        <Nav
+            filter={filter}
+            handleChange={searchText.bind(this)}
         />
         <Main
             countries={countriesData}

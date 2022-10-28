@@ -1,5 +1,5 @@
 import React from 'react'
-import Input from '../components/Input'
+
 export default function Header(props) {
     const {
         title,
@@ -12,10 +12,7 @@ export default function Header(props) {
         <h1>{title}</h1><br/>
         <p>{text} <b>{props.number}</b> {txt} </p>
         
-        <Input
-                value={props.filter}
-                onChange={props.handleChange}
-            />
+        
         </div>
     </header>
     
