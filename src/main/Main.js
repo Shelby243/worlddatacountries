@@ -3,9 +3,9 @@ import Country from '../components/Country'
 export default function Main(props) {
   return (
     
-    <div>
+    <div style={props.style}>
      <div className='countries-wrapper'>
-      {props.countrySearch.map((country)=>(<Country key={country.id} country={country} />))}
+      {props.countrySearch.map((country)=>(<Country  key={country.id} country={country} style={props.style1} />))}
       </div>
      </div>
     
